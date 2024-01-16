@@ -12,23 +12,29 @@ import {
 } from "@/types";
 
 export default async function Home() {
-  const riotAccountInfo: IRiotAccountInfo = await getRiotPUUID(
-    REGION.EUROPE,
-    "Rum%20Ham",
-    "100"
-  );
+  // const riotAccountInfo: IRiotAccountInfo = await getRiotPUUID(
+  //   REGION.EUROPE,
+  //   // "Rum%20Ham",
+  //   "oHopey",
+  //   // "100",
+  //   "0121"
+  // );
 
   // const summonerData: ISummonerInfo = await getSummoner(
   //   riotAccountInfo.puuid,
   //   REGION_NAME.UEW
   // );
 
+  // console.log(summonerData);
+
   // const matchIds = await getMatchIds(riotAccountInfo.puuid, REGION.EUROPE);
 
-  const matchId = "EUW1_6742895848";
-  const matchData: IMatchData = await getMatchData(matchId, REGION.EUROPE);
+  // console.log(matchIds);
 
-  console.log(matchData);
+  // const matchId = "EUW1_6768783916";
+  // const matchData: IMatchData = await getMatchData(matchId, REGION.EUROPE);
+
+  // console.log(matchData.info.participants);
 
   return <main className='flex p-24'></main>;
 }
